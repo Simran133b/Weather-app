@@ -1,0 +1,15 @@
+def main():
+    a = int(input("Enter the number of blocks in pile A: "))
+    b = int(input("Enter the number of blocks in pile B: "))
+    c = int(input("Enter the number of blocks in pile C: "))
+
+    total_blocks = a + b + c
+
+    # If the total number of blocks is already even, player 2 wins.
+    if total_blocks % 2 == 0:
+        print("Player 2 wins!")
+    else:
+        print("Player 1 wins!")
+
+if __name__ == "__main__":
+    main()
